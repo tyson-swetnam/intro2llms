@@ -22,11 +22,11 @@ nav:
     - Models: huggingface_models.md
     - Datasets: huggingface_datasets.md
     - Gradio: huggingface_gradio.md
-  - AI Enabled Browsers:
+  - Search Engines:
     - Bing: bing.md  
     - Bard: bard.md
-  - Privately developed apps:
-    - Research: private_research.md
+  - External Applications:
+    - Research: research.md
 
 # Configuration
 imgwidth: 70px;

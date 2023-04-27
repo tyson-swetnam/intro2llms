@@ -1,3 +1,9 @@
+## Table extraction
+
+[:simple-github: Microsft's `table-transformer`](https://github.com/microsoft/table-transformer){target=_blank} can extract any table from a PDF
+
+The have also published their [:hugging: model library](https://huggingface.co/datasets/bsmock/pubtables-1m){target=_blank} to HuggingFace
+
 ## Image Analysis
 
 ??? Tip "Stable Diffusion & Image Segmentation Models"
