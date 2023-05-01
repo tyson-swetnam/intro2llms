@@ -22,7 +22,6 @@ graph TB
 
 Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf)
 
-
 !!! Success "Writing ChatGPT Prompts"
         
     Strategies to keep in mind when writing prompts.
@@ -61,11 +60,19 @@ ChatGPT uses a form of syntax called [MarkDown](){target=_blank}
 
 ## :simple-openai: Prompt Writing
 
-### **Types**
-
 ChatGPT asks for a message to begin its conversation. These messages are called "Prompts". 
 
 Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
+
+Basic prompt structure should follow:
+
+| Role | Task | Format |
+|------|------|--------|
+| Act as [\[ROLE\]](#role-based) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
+
+Your prompt should specify the role in which ChatGPT responds, what its task is, and the format of how its outputs should be returned. 
+
+A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
 
 We are specifically working with ChatGPT in this section, but the same prompt types and traits can be used in all other LLMs.
 
@@ -81,11 +88,38 @@ We are specifically working with ChatGPT in this section, but the same prompt ty
     * [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts){target=_blank}
     * [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
 
-**Role-based**
+#### **Priming**
+
+ChatGPT does better when it is provided "prompt primers".
+
+Zero-shot unconditioned prompts are likely to return the least specific responses. 
+
+Responses are more likely to be useful when multiple specific output types are defined.
+
+| Types of Priming | Example |
+|------------------|---------|
+| Zero (Shot) | "Write five examples of assessments for watershed health." |
+| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
+| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+
+#### **Role**
 
 Set the role for ChatGPT to play during your session. 
 
 "I want you to act as ..." will establish what type of conversation you are planning to have. 
+
+| Types of Role |
+|---------------|
+| Project Manager  |
+| Copywriter / Editor  |
+| Paper Reviewer |
+| Teacher / Mentor / Advisor |
+| Student / Learner / Participant |
+| Software Engineer  |
+| DevOps Engineer  |
+| Linux Terminal  |
+| Python Interpreter |
+| Web Browser |
 
 Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/){target=_blank}, a web browser, a search engine, or language interpreter.
 
@@ -108,11 +142,27 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
 
     Example can use `GPT-3.5-Turbo` or `GPT-4`
 
-**Question and Answer**
+#### **Tasks**
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
 
 Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
+
+| Types of Task | 
+|---------------|
+| Scientific Article | 
+| Essay |
+| Blog Post |
+| Outline |
+| Email | 
+| Cover Letter |
+| Recipe |
+| Tutorial |
+| Lesson Plan | 
+| Jupyter Notebook |
+| Configuration |
+| Code |
+| Software Script |
 
 Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
 
@@ -126,7 +176,25 @@ There are extension tools for ChatGPT which allows you to prompt with references
 
     What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
 
-**Instructional**
+#### **Format**
+
+By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
+
+| Formats to output |
+|-------------------|
+| MarkDown Text (\& emojis) |
+| List |
+| Table |
+| HTML |
+| CSS |
+| Regular Expression |
+| CSV / TXT |
+| JSON |
+| Rich Text |
+| Gantt Chart |
+| Word Cloud |
+| Graphs |
+| Spreadsheets |
 
 You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
 
@@ -142,7 +210,31 @@ ChatGPT can provide instructional details about how to do specific tasks.
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
 
-### **Traits**
+#### **Linked Prompts**
+
+Follow-up your prompts sequentially.
+
+Responses to prompts may not return the exact details or information that you are after the first time. Follow-up by rephrasing your prompts more carefully and continuing with iterative prompting can build upon your priors.
+
+"Chain prompting" or "Linked Prompting" brings multiple prompts together.
+
+| Linked Prompting | Examples |
+|------------------|----------|
+| Step 1: Priming | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
+| Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
+| Step 3: Try again with enabled [WebChatGPT](https://www.webchatgpt.app/){target=_blank} or [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
+
+### **Code-Interpreter**
+
+ChatGPT's [Code-interpreter](https://openai.com/blog/chatgpt-plugins#code-interpreter){target=_blank} plugins are still in Alpha and Beta release, however they show great promise for helping to anlayze data graphically and statistically.
+
+### **General Prompt Traits**
+
+**Syntax**
+
+Use [MarkDown syntax](https://www.markdownguide.org/basic-syntax/){target=_blank} in your prompts.
+
+For code examples use single backtick ` or triple ``` for block quotes when adding your own code to your prompts.
 
 **Context**
 
@@ -156,11 +248,6 @@ Keep your prompts precise and use clear language. Constrain the topic areas for 
 
 Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
 
-**Follow-up**
-
-Responses to prompts may not return the exact details or information that you are after. Follow-up by rephrasing your prompts more carefully and continue with an iterative prompt to build upon your priors.
-
-"Chain prompting"
 
 ## :simple-openai: Software Development
 
