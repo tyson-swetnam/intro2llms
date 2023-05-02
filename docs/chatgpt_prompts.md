@@ -1,5 +1,7 @@
 # Prompt Engineering
 
+![banner](assets/chatgpt-banner.png){width=1000}
+
 When can you use ChatGPT for research and education? 
 
 ``` mermaid
@@ -84,9 +86,11 @@ We are specifically working with ChatGPT in this section, but the same prompt ty
 
     Check out lists around:
 
-    * [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
-    * [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts){target=_blank}
-    * [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
+    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
+
+    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts){target=_blank}
+   
+    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
 
 #### **Priming**
 
