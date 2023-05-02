@@ -1,5 +1,7 @@
 # Prompt Engineering & AI Application deployment
 
+![banner](assets/banner3_ai.png){width=1000}
+
 Welcome to our documentation on generative Artificial Intelligence (AI) prompt engineering and application integration in academic research and education.
 
 !!! Success "Learning Objectives"
