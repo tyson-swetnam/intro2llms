@@ -59,4 +59,12 @@ Check out the [:simple-github: openai/openai-cookbook](https://github.com/openai
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=468576060&machine=basicLinux32gb&location=EastUs)
 
-[:simple-openai: OpenAI Playground](https://platform.openai.com/playground){target=_blank} allows you to work with a range of OpenAI models for Chat, Text Completion, Image generation, Embedding, Speech-to-Text, and Fine Tuning your own models.
+## Playground
+
+[:simple-openai: Playground](https://platform.openai.com/playground){target=_blank} allows you to work with a range of OpenAI models for Chat, Text Completion, Image generation, Embedding, Speech-to-Text, and Fine Tuning your own models.
+
+The interface for Playground uses the Python OpenAI API underneath the User Interface, and there is an option to copy/paste the code directly into a Python console. 
+
+## Links
+
+[:simple-youtube: GPT-4 Harvard CS50 Talk](https://www.youtube.com/watch?v=vw-KWfKwvTQ){target=_blank}

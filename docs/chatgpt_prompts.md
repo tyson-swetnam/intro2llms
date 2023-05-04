@@ -24,29 +24,21 @@ graph TB
 
 Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf)
 
-!!! Success "Writing ChatGPT Prompts"
-        
-    Strategies to keep in mind when writing prompts.
-
-    | Ws | Reasons |
-    |----|---------|
-    | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
-    | What | is the specific context of your prompts? |
-    | When | is the specific time period of interest? Specify if so. |
-    | Where | is the geographic region or conceptual area? |
-    | In what way | do you want ChatGPT to respond? Are you asking for language, software code, or specific references? |
-
 ??? info "Create a ChatGPT account"
 
-    When you go to [https://chat.openai.com](){target=_blank} you will be redirected to sign in or sign up. 
+    When you go to [https://chat.openai.com](https://chat.openai.com){target=_blank} you will be redirected to sign in or sign up. 
 
     If you have a Microsoft account affiliated institutional email address, we suggest you use it.
 
-    !!! success "ChatGPT Plus"
+    !!! tip "ChatGPT Plus"
 
-        Demand for ChatGPT is so high you may be denied access to the platform for minutes to hours.
+        Demand for ChatGPT `GPT-4` is high. You may even be denied access for minutes to hours depending on demand.
 
-        Paying $20 / month for a "ChatGPT Plus" account will eliminate the wait, and give access to ChatGPT `GPT-4` (currently throttled to 25 responses every 3 hours).
+        Signing up to $20 a month for a "ChatGPT Plus" account will eliminate the wait, and give immediate access to ChatGPT `GPT-4` (which is currently throttled to 25 responses every 3 hours).
+
+        The ChatGPT Plus subscription is separate from the [:simple-openai: OpenAI API](https://platform.openai.com/){target=_blank} in the next lesson.
+
+        Getting access to [ChatGPT Plugins](https://openai.com/blog/chatgpt-plugins){target=_blank} requires registering for a waiting list.
 
 ## How does ChatGPT Work?
 
@@ -58,7 +50,9 @@ ChatGPT can respond with either langauge (prose) or computer code.
 
 Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce images based on prompts.
 
-ChatGPT uses a form of syntax called [MarkDown](){target=_blank}
+ChatGPT uses a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
+
+This website is [written in MarkDown](https://squidfunk.github.io/mkdocs-material/){target=_blank} and converted to HTML.
 
 ## :simple-openai: Prompt Writing
 
@@ -76,7 +70,7 @@ Your prompt should specify the role in which ChatGPT responds, what its task is,
 
 A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
 
-We are specifically working with ChatGPT in this section, but the same prompt types and traits can be used in all other LLMs.
+This lesson only covers ChatGPT, but the same prompt techniques can be used in other LLMs.
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
 
@@ -127,21 +121,23 @@ Set the role for ChatGPT to play during your session.
 
 Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/){target=_blank}, a web browser, a search engine, or language interpreter.
 
-??? Abstract "ChatGPT as a Research Software Guru"
+??? Abstract "Data Scientist"
 
     Let's try an example prompt with role-playing to help write code in the R programming language.
 
     ```markdown
-    I want you to act as a research software guru with complete knowledge of the R language 
-    and its libraries in the TidyVerse and the integrated development environment RStudio. 
+    I want you to act as a data scientist with complete knowledge of the R language, 
+    the TidyVerse, and RStudio. 
     
-    Please output any code results in R as MarkDown syntax code blocks in R MarkDown format 
-    Ideally I would like R code to be written in RMD or Quarto syntax. 
-    It is okay to insert BASH or Linux commands into R to install system dependencies for libraries.
+    Write the code required to create a new R project environment,
+    Download and load the Palmer Penguins dataset, and plot regressions of body mass, 
+    bill length, and width for the species of Penguins in the dataset. 
 
-    I want you to write the code required to plot the regression of body mass, 
-    bill length, and width for the species of Penguins in the Palmer Penguins dataset. 
-    You will need to download the Palmer Penguins dataset and then create the RMD notebook.
+    Your response output should be in R and RMarkDown format 
+    with text and code delineated with ``` blocks.
+
+    At the beginning of new file make sure to install any 
+    RStudio system dependencies and R libraries that Palmer Penguins requires.
     ```
 
     Example can use `GPT-3.5-Turbo` or `GPT-4`
@@ -172,7 +168,7 @@ Bing and Bard fill an important space in these types of prompts - they return we
 
 There are extension tools for ChatGPT which allows you to prompt with references.
 
-!!! Tip "Grant ChatGPT access to the Internet"
+!!! Tip "Access to the Internet"
 
     By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
 
@@ -204,7 +200,7 @@ You can also ask ChatGPT to explain complex topics or to act as a cook-book step
 
 ChatGPT can provide instructional details about how to do specific tasks. 
 
-??? Abstract "ChatGPT as a documentation writer"
+??? Abstract "Documentation Writer"
 
     ```markdown
     I want you to act as a DIY expert. You will help me develop the skills necessary 
@@ -234,6 +230,18 @@ ChatGPT's [Code-interpreter](https://openai.com/blog/chatgpt-plugins#code-interp
 
 ### **General Prompt Traits**
 
+!!! Success "Strategies"
+        
+    Keep these W's in mind when writing prompts
+
+    | W's | Reasons |
+    |----|---------|
+    | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
+    | What | is the specific context of your prompts? |
+    | When | is the specific time period of interest? Specify if so. |
+    | Where | is the geographic region or conceptual area? |
+    | In what way | do you want ChatGPT to respond: in a programming language, code, text-to-image? |
+
 **Syntax**
 
 Use [MarkDown syntax](https://www.markdownguide.org/basic-syntax/){target=_blank} in your prompts.
@@ -252,7 +260,6 @@ Keep your prompts precise and use clear language. Constrain the topic areas for 
 
 Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
 
-
 ## :simple-openai: Software Development
 
 ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
@@ -261,7 +268,7 @@ ChatGPT is trained on langauges, including software language. Use ChatGPT as you
 
 For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
 
-??? Abstract "ChatGPT as Data Scientist"
+??? Abstract "Linux Guru"
 
     ChatGPT is trained on common data science languages, like Python, Julia, and R. Use ChatGPT to help develop basic code or to explain and debug code you're trying to write. 
 
@@ -301,7 +308,7 @@ For novice programmers, ChatGPT likely fills a long unfilled hole in your knowle
 
 For more advanced programmers, ChatGPT's weaknesses may become apparent when optimizing or linting complex code bases. However, there are already extension tools which can evaluate code performance and make changes or suggestions. 
 
-??? Abstract "ChatGPT as DevOps"
+??? Abstract "DevOps Engineer"
 
     ChatGPT can automate tasks and write tests
 
@@ -335,6 +342,18 @@ For more advanced programmers, ChatGPT's weaknesses may become apparent when opt
 
 **Outlining**
 
+ChatGPT can help to create outlines for any type of writing. This can help get beyond a blank page problem.
+
+??? Abstract "Getting ideas on paper"
+
+    Create a basic outline about an idea that you want to work on
+
+    ```
+    Create a title and sections for a student data challenge with 
+    three sections and no more than three subsections each. The challenge should be about
+    using Earth Observation System data from NASA and European Space Agency to diagnose 
+    environmental change and human societies.
+    ```
 
 **Editing**
 
@@ -381,25 +400,21 @@ You can use also ChatGPT to draft email responses or to write letters, although 
 
 ## :simple-openai:  Academic Research
 
-ChatGPT is not reliable for producing responses to scientific inquiries, and should not be used as a replacement for conventional human-led research.
+ChatGPT is not (yet) reliable at producing factual responses and should not be used as a replacement for conventional research techniques such as literature reviews. Our lesson on :material-run-fast: [:hugging: HuggingFace Models](huggingface_models.md) uses a couple of public tools for reviewing PDFs which are closer to academic paper reading and reviewing. 
 
-By default, ChatGPT is not connected to the web, and will not produce results from dates after its training period (September 2021 for `GPT-4`).
+ChatGPT is not connected to the web by default and will not produce results from dates after its training period (September 2021 for `GPT-4`). The Alpha release [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} and unofficial plugins like [WebChatGPT](https://www.webchatgpt.app/){target=_blank} open up the internet but are still limited in their ability to return focused results.
 
-There are several extensions (browser plugins, stand alone applications) for ChatGPT which generate its results directly from the published scientific literature.
+??? Abstract "Talk to Dead Scientists"
 
-??? Abstract "Research scholarly articles"
-
-    With the [WebChatGPT](https://www.webchatgpt.app/) Chrome or FireFox extension enabled, ChatGPT can search websites for content to questions.
-
-    What is really happening is that WebChatGPT is annotating your prompt upon execution with a list of web search results which match your prompt question.
+    Try to ask a question with and without Internet access enabled:
 
     ```markdown
-    /site:scholar.google.com,https://users.math.yale.edu/mandelbrot/webbooks/wb_multi.html
-
     I want you to respond as though you are the mathematician Benoit Mandelbrot
 
     Explain the relationship of lacunarity and fractal dimension for a self-affine series
+
+    Show your results using mathematical equations in LaTeX or MathJax style format
     ```
+    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
 
-
-Again, this is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
+For working with scientific software and writing analytical code, we encourage you to check out :material-run-fast: our lesson on [:octicons-copilot-48: GitHub CoPilot](github_copilot.md)
