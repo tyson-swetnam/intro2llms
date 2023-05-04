@@ -54,6 +54,12 @@ ChatGPT uses a syntax called [MarkDown :octicons-markdown-16:](https://www.markd
 
 This website is [written in MarkDown](https://squidfunk.github.io/mkdocs-material/){target=_blank} and converted to HTML.
 
+??? info "Language Model Family Tree"
+
+    [![tree](assets/tree.jpeg){width=800}](https://arxiv.org/abs/2304.13712){target=_blank}
+    
+    Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} examine the history of LLMs 
+
 ## :simple-openai: Prompt Writing
 
 ChatGPT asks for a message to begin its conversation. These messages are called "Prompts". 
