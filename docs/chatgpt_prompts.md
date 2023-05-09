@@ -44,6 +44,9 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
 
 Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt){target=_blank}
 
+Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](
+https://doi.org/10.48550/arXiv.2303.08774){target=_blank}
+
 ChatGPT's `GPT-3.5-turbo` and `GPT-v4` models use natural language prompts to elicit contextual responses. 
 
 ChatGPT can respond with either langauge (prose) or computer code. 
@@ -52,7 +55,7 @@ Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_bla
 
 ChatGPT uses a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
 
-This website is [written in MarkDown](https://squidfunk.github.io/mkdocs-material/){target=_blank} and converted to HTML.
+This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python.
 
 ??? info "Language Model Family Tree"
 
