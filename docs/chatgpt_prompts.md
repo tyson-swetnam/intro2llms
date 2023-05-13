@@ -69,7 +69,21 @@ ChatGPT asks for a message to begin its conversation. These messages are called 
 
 Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
 
-Basic prompt structure should follow:
+### **Priming**
+
+ChatGPT does better when it is provided "prompt primers".
+
+Zero-shot unconditioned prompts are likely to return the least specific responses. 
+
+Responses are more likely to be useful when multiple specific output types are defined.
+
+| Types of Priming | Example |
+|------------------|---------|
+| Zero (Shot) | "Write five examples of assessments for watershed health." |
+| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
+| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+
+### **Prompt Structure**
 
 | Role | Task | Format |
 |------|------|--------|
@@ -94,20 +108,6 @@ This lesson only covers ChatGPT, but the same prompt techniques can be used in o
     [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts){target=_blank}
    
     [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
-
-#### **Priming**
-
-ChatGPT does better when it is provided "prompt primers".
-
-Zero-shot unconditioned prompts are likely to return the least specific responses. 
-
-Responses are more likely to be useful when multiple specific output types are defined.
-
-| Types of Priming | Example |
-|------------------|---------|
-| Zero (Shot) | "Write five examples of assessments for watershed health." |
-| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
-| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
 
 #### **Role**
 
@@ -219,7 +219,7 @@ ChatGPT can provide instructional details about how to do specific tasks.
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
 
-#### **Linked Prompts**
+### **Linked Prompts**
 
 Follow-up your prompts sequentially.
 

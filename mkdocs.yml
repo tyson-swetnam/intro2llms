@@ -13,6 +13,7 @@ copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
 # Page tree
 nav:
   - Home: index.md
+  - Workshop Agenda: agenda.md
   - OpenAI: 
     - ChatGPT Prompt Enginering: chatgpt_prompts.md
     - Using the API: openai_api.md
