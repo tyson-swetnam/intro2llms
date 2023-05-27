@@ -12,7 +12,7 @@ This guide will help you set up Google Bard and get started using it.
 
 1. To set up Google Bard, visit [bard.google.com](https://bard.google.com/){target=_blank}.
 
-2. If you are not already signed in to your Google Account, click **Sign in** at the top right corner of the page[[2](https://support.google.com/bard/answer/13278668?hl=en)]. If you do not have a Google Account, create one at [accounts.google.com](https://accounts.google.com/){target=_blank}.
+2. If you are not already signed in to your Google Account, click **Sign in** at the top right corner of the page. If you do not have a Google Account, create one at [accounts.google.com](https://accounts.google.com/){target=_blank}.
 
 3. After signing in, you should be able to access Google Bard and begin using its features.
 
@@ -23,4 +23,8 @@ If you encounter issues signing in to your Google Account in Bard, follow the st
 ## Availability
 
 Google Bard initially rolled out access in the U.S. and U.K., and is continuously expanding to [more countries and languages](https://blog.google/technology/ai/try-bard/){target=_blank}.
- 
+
+For University managed accounts (`netid@arizona.edu`) Bard requires access via the Google Workspace be activated by an administrator. As of 5/26/23 UArizona administrators have not activated this feature in the UArizona Google Workspace. 
+
+You can however use Bard through a `name@gmail.com` address. 
+
