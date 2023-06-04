@@ -58,7 +58,7 @@ While participating at an Event, we expect you to:
 
 -   Interact with others and use ChatGPT professionally and ethically by
     complying with our Policies.
--   Constructively critize ideas and processes, not people.
+-   Constructively criticize ideas and processes, not people.
 -   Follow the Golden Rule (treat others as you want to be treated) when
     interacting online or in-person with collaborators, trainers, and
     support staff.
@@ -71,13 +71,13 @@ We do not tolerate harassment of other users or staff in any form
 language or jokes, doxing, insults, advocating for or encouraging any of
 these behaviors). Sexual language and imagery are not appropriate at any
 time (excludes Protected Health Information in compliance with HIPAA).
-Any user violating this Code may be expelled from the platform and the
+Anyone violating this Code may be expelled from the platform and the
 workshop at DSI's sole discretion without warning.
 
-To report a violation of this Code, directly speak a trainer, if you are not comfortable
-speaking to a trainer, or the trainer is being reported email <info@cyverse.org> with the following information:
+To report a violation of this Code, directly speak with a trainer, if you are not comfortable
+speaking to a trainer, or the trainer is the one being reported, email <info@cyverse.org> with the following information:
 
--   Your contact information
+-   Your contact information (name, email)
 -   Names (real, username, pseudonyms) of any individuals involved, and
     or witness(es) if any.
 -   Your account of what occurred and if the incident is ongoing. If
